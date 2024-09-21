@@ -8,7 +8,7 @@ import {
   loadFromLocalStorage,
   saveToLocalStorage,
   updateLocalStorage,
-} from "../utils/localStorage";
+} from "../utils/LocalStorage";
 
 const CalendarWithHabitTracker = () => {
   const [currentDate, setCurrentDate] = useState(new Date());

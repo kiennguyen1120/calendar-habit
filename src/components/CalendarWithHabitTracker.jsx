@@ -3,12 +3,12 @@ import Calendar from "./Calendar";
 import HabitTracker from "./HabitTracker";
 import AddHabitModal from "./AddHabitModal";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 import {
   loadFromLocalStorage,
-  updateLocalStorage,
   saveToLocalStorage,
+  updateLocalStorage,
 } from "./utils/localStorage";
-import { v4 as uuidv4 } from "uuid";
 
 const CalendarWithHabitTracker = () => {
   const [currentDate, setCurrentDate] = useState(new Date());

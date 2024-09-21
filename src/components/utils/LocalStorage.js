@@ -19,14 +19,6 @@ export const loadFromLocalStorage = () => {
   }
 };
 
-export const clearLocalStorage = () => {
-  try {
-    localStorage.removeItem(LOCAL_STORAGE_KEY);
-  } catch (error) {
-    console.error("Error clearing data from localStorage:", error);
-  }
-};
-
 export const updateLocalStorage = (updateFunction) => {
   try {
     const currentData = loadFromLocalStorage() || {
